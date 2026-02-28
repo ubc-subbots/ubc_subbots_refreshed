@@ -127,7 +127,12 @@
                 height: 100%;
                 width: auto;
                 aspect-ratio: 1 / 1;
-                color: var(--white);
+                fill: var(--white);
+                transition: transform 0.25s ease;
+            }
+
+            svg:hover {
+                transform: scale(1.1);
             }
 
             /* .github {

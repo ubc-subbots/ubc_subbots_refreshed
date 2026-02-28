@@ -70,6 +70,7 @@
 
             .subteam-option:hover img {
                 filter: saturate(1);
+                transform: scale(1.03);
             }
 
             .subteam-option:hover .content {

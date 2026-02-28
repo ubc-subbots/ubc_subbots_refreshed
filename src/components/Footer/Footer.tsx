@@ -1,7 +1,8 @@
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
+import LinkedInLogo from '../../assets/icons/linkedin-solid.svg?react';
+import InstagramLogo from '../../assets/icons/instagram-solid.svg?react';
+import GitHubLogo from '../../assets/icons/github-solid.svg?react';
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 import './Footer.css';
 
@@ -59,9 +60,9 @@ function Footer() {
                     <p>Copyright © UBC Subbots 2025</p>
                 </div>
                 <div className="credits-right">
-                    <FontAwesomeIcon icon={faLinkedinIn} className="linkedin" />
-                    <FontAwesomeIcon icon={faGithub} className="github" />
-                    <FontAwesomeIcon icon={faInstagram} className="instagram" />
+                    <LinkedInLogo className="linkedin" />
+                    <GitHubLogo className="github" />
+                    <InstagramLogo className="instagram" />
                 </div>
                 
             </div>

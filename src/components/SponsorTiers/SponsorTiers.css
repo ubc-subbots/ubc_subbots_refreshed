@@ -51,10 +51,21 @@
             display: grid;
             grid-template-rows: 0fr;
             transition: grid-template-rows 0.25s ease;
-        }
 
-        .dropdown-content > div {
-            overflow: hidden;
+
+            > div {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                gap: var(--inline-gap);
+
+
+                > * {
+                    width: 100%;
+                    display: flex;
+                }
+            }
         }
 
         .dropdown-content.shown {

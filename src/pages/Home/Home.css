@@ -305,6 +305,7 @@
 
             .sponsor-cta-inner {
                 width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
+                height: 100%;
 
 
                 .cta-content {
@@ -322,7 +323,7 @@
                     }
 
                     .arrow-animation {
-                        height: 25%;
+                        height: 35%;
                         overflow: hidden;
                         aspect-ratio: 1 / 1;
                         display: flex;
@@ -332,16 +333,16 @@
                             height: 100%;
                             aspect-ratio: 1 / 1;
                             display: flex;
-                            transform: translateX(-65%);
-                            gap: 50px;
+                            transform: translateX(-132px);
+                            gap: 20px;
                             transition: 0.2s ease-out;
+                            min-width: min-content;
 
                             svg {
                                 transform-origin: center center;
-                                transform: rotateZ(45deg);
-                                fill: var(--white);
-                                aspect-ratio: 1 / 1;
+                                color: var(--white);
                                 height: 100%;
+                                width: 100%;
                             }
                         }
                     }
@@ -361,21 +362,41 @@
 
 
 
-@media (max-width: 600px) {
-    .about {
-        grid-template-columns: 1fr !important;
+@media (max-width: 1300px) {
+    .Home {
+        
+        .subteams {
 
-        .content {
-            grid-row: 2;
-        }
+            .subteams-inner {
 
-        .display {
-            max-width: 300px;
-            grid-row: 1;
+                .subteam-panel {
+                    
+                    .subteam-card {
+                        aspect-ratio: unset;
+                    }
+                }
+            }
         }
     }
+}
 
-    .joinus {
-        flex-direction: column-reverse;
+@media (max-width: 600px) {
+    .Home {
+        .about {
+            grid-template-columns: 1fr !important;
+
+            .content {
+                grid-row: 2;
+            }
+
+            .display {
+                max-width: 300px;
+                grid-row: 1;
+            }
+        }
+
+        .joinus {
+            flex-direction: column-reverse;
+        }
     }
 }

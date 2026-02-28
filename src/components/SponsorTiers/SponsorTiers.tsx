@@ -96,6 +96,11 @@ function TierDropdown({ sponsorTier, sponsorCount, currentTier, setCurrentTier, 
 
     let dropdownEnabled = currentTier === id;
 
+    const deliverables = sponsorTier.deliverables.map((item) => {
+        return <li>{item}</li>
+    })
+
+
     return (
         <button 
             className={`tier-dropdown ${dropdownEnabled ? "shown" : ""}`}
@@ -115,11 +120,11 @@ function TierDropdown({ sponsorTier, sponsorCount, currentTier, setCurrentTier, 
 
             <div className={`dropdown-content ${dropdownEnabled ? "shown" : ""}`}>
                 <div>
-                    <img src="" />
+                    <img src="/images/steelhead_swimming.jpg" />
 
-                    <div>
-
-                    </div>
+                    <ul>
+                        {deliverables}
+                    </ul>
 
                     <h4>{sponsorCount} current sponsor{sponsorCount === 1 ? "" : "s"}</h4>
                 </div>

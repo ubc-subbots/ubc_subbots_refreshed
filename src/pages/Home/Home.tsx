@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faUserPlus, faCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 import './Home.css';
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
@@ -150,8 +150,8 @@ function Home() {
 
                             <div className="arrow-animation">
                                 <div className="arrow-animation-wrapper">
-                                    <Arrow />
-                                    <Arrow />
+                                    <FontAwesomeIcon icon={faCircleRight} />
+                                    <FontAwesomeIcon icon={faCircleRight} />
                                 </div>
                             </div>
                         </div>
