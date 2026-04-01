@@ -86,6 +86,7 @@
                     position: absolute;
                     inset: 0;
                     z-index: -1;
+                    border-radius: var(--border-radius-normal);
                 }
 
                 .img-mask {
@@ -114,7 +115,7 @@
             .content {
                 display: flex;
                 flex-wrap: wrap;
-                width: 80%;
+                /* width: 80%; */
                 justify-content: center;
 
                 .member-item {

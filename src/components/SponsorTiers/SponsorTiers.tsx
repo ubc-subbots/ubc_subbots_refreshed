@@ -109,6 +109,17 @@ function TierDropdown({ sponsorTier, sponsorCount, currentTier, setCurrentTier, 
                 "--tier-bg-color": sponsorTier.color
             } as React.CSSProperties }>
 
+            <div className="background-wrapper">
+                <div 
+                    className="bg-color"
+                    style={{
+                        "--tier-bg-color": sponsorTier.color
+                    } as React.CSSProperties } 
+                />
+
+                <img src="/images/pulling_steelhead_out_of_water.jpg" />
+            </div>
+
             <div className="header">
                 <h2>{sponsorTier.tier}</h2>
 
@@ -120,7 +131,7 @@ function TierDropdown({ sponsorTier, sponsorCount, currentTier, setCurrentTier, 
 
             <div className={`dropdown-content ${dropdownEnabled ? "shown" : ""}`}>
                 <div>
-                    <img src="/images/steelhead_swimming.jpg" />
+                    {/* <img src="/images/steelhead_swimming.jpg" /> */}
 
                     <ul>
                         {deliverables}

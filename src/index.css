@@ -61,6 +61,9 @@
   --block-gap: 20px;
   --block-gap-reduced: 10px;
 
+  --border-radius-normal: 16px;
+  --border-radius-small: 8px;
+
   --fontsize-secondary: 20px;
   --fontsize-regular: 24px;
   --fontsize-large: 32px;

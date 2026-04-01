@@ -2,20 +2,20 @@
     {
         "title": "Software",
         "image": "/images/steelhead_out_of_water.jpg",
-        "description": "Developing autonomous underwater navigation systems, implementing computer vision algorithms, controlling thrusters for precise movement, managing torpedo and manipulator actuators, and integrating everything into a single cohesive autonomous platform.",
+        "description": "Whereas the other teams construct the mechanical body of our robots, the software team acts as Frankenstein, giving life and thought to the cold, uncaring steel carcass. Maybe that’s an overexaggeration, but our main goal is to program the various autonomous tasks required for competition through the utilization of various control systems and sensors.",
         "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
         "projects": [
                 {
-                    "name": "Computer Vision",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "Our computer vision simulation in action. The program manges to distinguish our test image 'Lena' from the underwater surroundings.One quirk about underwater images is that the farther away an object is, the greener it looks. Light behaves differently underwater than on land due to scattering and absorption, meaning if we want our camera simulation to look realistic, we need to model the behaviour of light. A key component of our simulation is underwater image synthesis, which takes an RGBD image (colour and depth) rendered in our simulation and generates an RGB image of an underwater scene.",
+                    "name": "Controls / Localization",
+                    "resources": ["ROS2", "Rviz", "Matlab"],
+                    "description": "The localization team focuses on the getting information side of the competition. Using algorithms such as SLAM, which uses various sensors such as a lidar and an imu, we try to map out the surroundings around us to find out where to go next. This team interacts a lot with the physical robot, as precise tuning of the sensors is necessary to achieve optimal and accurate readings. Now that we have a sense of where we are in the competition circuit, it's up to the controls team to control what happens next. Using mission planners decision trees, this team determines how we complete the various tasks of the competition. Additionally, there are a lot of factors underwater that make navigation quite difficult when there is a precise end location that we want to get to. This team deals with the various controls systems that make that navigation possible, such as PID.",
                     "image": "/images/steelhead_underwater.jpg"
                 },
 
                 {
-                    "name": "DevOps",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "Our computer vision simulation in action. The program manges to distinguish our test image 'Lena' from the underwater surroundings.One quirk about underwater images is that the farther away an object is, the greener it looks. Light behaves differently underwater than on land due to scattering and absorption, meaning if we want our camera simulation to look realistic, we need to model the behaviour of light. A key component of our simulation is underwater image synthesis, which takes an RGBD image (colour and depth) rendered in our simulation and generates an RGB image of an underwater scene.",
+                    "name": "Simulation",
+                    "resources": ["Gazebo", "Blender", "Rviz"],
+                    "description": "Given the nature of our competition, it can be hard to get access to a large body of water every single day. To mitigate that, we have a team dedicated to creating a realistic simulation that anybody can have access to at any time. The main goal is to make a parallel simulation that could be interswapped with the real thing at any time. This involves creating realistic hydrodynamic physics simulations, creating a realistic environment of the competition course, and various other tasks. Occasionally, we have to create models ourselves, so people with a diverse toolset of skills are encouraged.",
                     "image": "/images/steelhead_underwater.jpg"
                 },
 
@@ -64,23 +64,23 @@
         "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
         "projects": [
                 {
-                    "name": "Actuators",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "There are several tasks in the Robosub competition that involve objects to be manipulated. To complete these tasks additional actuator systems are required. One of our actuator systems is a robotic manipulator arm, designed to grip and move various objects. So far, we have designed a 2-degree of freedom arm, with an end effector made for gripping. This project involves close collaboration with the electrical actuators team, making work on Triton's actuators a very good exercise in mechatronics engineering.",
+                    "name": "Claw",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "Every year's competition includes a task that involves moving target objects to specific locations. Our mechanical claw was created with these tasks in mind, with versatility and reliability at the core of its design. The claw's gear-based mechanism, driven by a high-performance servo motor, is a robust design that is easily controlled through a pulse-width modulation (PWM) control program. Its soft gripper pads are designed to conform to any object they come into contact with, and the angle of its arms are manually adjustable for even greater versatility.",
                     "image": "/images/steelhead_underwater.jpg"
                 },
 
                 {
-                    "name": "Frames and Enclosures",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "There are several tasks in the Robosub competition that involve objects to be manipulated. To complete these tasks additional actuator systems are required. One of our actuator systems is a robotic manipulator arm, designed to grip and move various objects. So far, we have designed a 2-degree of freedom arm, with an end effector made for gripping. This project involves close collaboration with the electrical actuators team, making work on Triton's actuators a very good exercise in mechatronics engineering.",
+                    "name": "Torpedo Launcher",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "A key part of the competition is our robot's ability to identify targets and launch projectiles through them. To achieve this, we designed our spring-loaded torpedo launcher. Its spring-based operation allows it to launch its projectiles with sufficient speed and accuracy while minimizing the system's complexity and without compromising safety. The torpedoes themselves were fabricated using stereolithography (SLA) 3D-printing, making them durable and dense enough to glide through the water without prematurely surfacing.",
                     "image": "/images/steelhead_underwater.jpg"
                 },
 
                 {
-                    "name": "Hydrodynamics and Waterproofing",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "There are several tasks in the Robosub competition that involve objects to be manipulated. To complete these tasks additional actuator systems are required. One of our actuator systems is a robotic manipulator arm, designed to grip and move various objects. So far, we have designed a 2-degree of freedom arm, with an end effector made for gripping. This project involves close collaboration with the electrical actuators team, making work on Triton's actuators a very good exercise in mechatronics engineering.",
+                    "name": "Dropper",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "During the competition, our robot needs to drop “markers” in specific locations. Our solution to this was a gravity-based mechanism that drops the markers by rotating them to align with carefully-placed slots in their housing components, allowing them to fall through and drop towards the target area. This approach allows each of the two markers to be released independently using a single servo motor, due to the angular offset between the slots for each marker. The droppers themselves were designed to facilitate a reliable downward trajectory and to remain immobile once making contact with the ground.",
                     "image": "/images/steelhead_underwater.jpg"
                 }
             ]

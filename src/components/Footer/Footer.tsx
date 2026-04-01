@@ -60,9 +60,9 @@ function Footer() {
                     <p>Copyright © UBC Subbots 2025</p>
                 </div>
                 <div className="credits-right">
-                    <LinkedInLogo className="linkedin" />
-                    <GitHubLogo className="github" />
-                    <InstagramLogo className="instagram" />
+                    <a href="https://www.linkedin.com/company/ubc-subbots/" ><LinkedInLogo /></a>
+                    <a href="https://github.com/ubc-subbots" ><GitHubLogo /></a>
+                    <a href="https://www.instagram.com/ubcsubbots/" ><InstagramLogo /></a>
                 </div>
                 
             </div>

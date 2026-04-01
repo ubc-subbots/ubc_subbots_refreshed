@@ -26,6 +26,7 @@
                 border-bottom: 2px solid var(--pastel-green);
                 transition: 0.15s;
                 font-weight: 500;
+                border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
             }
 
             > p:hover {
@@ -52,6 +53,7 @@
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
+                border-radius: var(--border-radius-normal);
             }
 
             .content {
