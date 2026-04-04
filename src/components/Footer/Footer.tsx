@@ -38,7 +38,7 @@ function Footer() {
 
                 <div className="content-left">
                     <h1>ADVANCED</h1>
-                    <h1><span>SUBSEA</span></h1>
+                    <h1><strong>SUBSEA</strong></h1>
                     <h1>ENGINEERING</h1>
                 </div>
                 <div className="content-right">

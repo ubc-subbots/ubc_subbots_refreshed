@@ -41,9 +41,10 @@
 
 
     .about {
-        padding: var(--padding-large);
+        padding-block: var(--padding-regular);
         margin-inline: auto;
-        border-block: 1px solid var(--black);
+        width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
+        border-bottom: 1px solid var(--black);
         display: flex;
         justify-content: center;
 
@@ -53,24 +54,29 @@
             justify-content: center;
             align-items: center;
             display: grid;
-            grid-template-columns: 3fr 2fr;
+            grid-template-columns: 2fr 1fr;
             width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
             gap: var(--inline-gap);
 
 
             .content {
-
                 h2 {
-                    font-weight: 400;
+                    margin-bottom: var(--block-gap-reduced)
                 }
 
-                h2 span {
-                    font-size: clamp(2rem, 6vw, 4rem);
-                    font-weight: 500;
+                span {
+                    font-size: inherit;
+                    font-weight: inherit;
                 }
-                
-                h4 {
-                    font-weight: 400;
+
+                .word-mask {
+                    display: inline-block;
+                    overflow: hidden;
+                    vertical-align: bottom;
+                }
+
+                .word {
+                    display: inline-block;
                 }
             }
 
@@ -90,10 +96,12 @@
 
 
     .joinus {
-        padding: var(--padding-large);
+        padding-block: var(--padding-large);
+        margin-inline: auto;
+        width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
         display: flex;
         justify-content: center;
-        border-block: 1px solid var(--black);
+        border-top: 1px solid var(--black);
         overflow: hidden;
 
 
@@ -122,19 +130,6 @@
                 flex: 2;
                 gap: 10px;
                 display: grid;
-
-                h2 {
-                    font-weight: 400;
-                }
-
-                h2 span {
-                    font-size: clamp(2rem, 6vw, 4rem);
-                    font-weight: 500;
-                }
-                
-                h4 {
-                    font-weight: 400;
-                }
             }
 
             .display {

@@ -37,7 +37,7 @@ function Subteam({ title, projects, categories, description, image }: subteamPro
 
                 <div className="subteam-header">
 
-                    <h2>{title}</h2>
+                    <h2><strong>{title}</strong></h2>
                     <div className="divider" />
                     <p>{projects.map((obj) => obj.name).join(" / ")}</p>
 
@@ -54,7 +54,7 @@ function Subteam({ title, projects, categories, description, image }: subteamPro
                     </div>
 
                     <div className="content-right">
-                        <p>{description}</p>
+                        <p className="content-text-large">{description}</p>
                     </div>
 
                 </div>

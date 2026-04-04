@@ -47,12 +47,12 @@ function Sponsors() {
                             <FontAwesomeIcon icon={faEnvelope} />
                         </button>
 
-                        <h4>
+                        <p className="content-text-large">
                             Your contributions directly support design teams in BC. 
                             Support next generation engineers and computer scientists specializing in 
                             mechanical, electrical, software, and robotics. Invest in the future of 
                             Vancouver, making tomorrow more advanced than today.
-                        </h4>
+                        </p>
                     </div>
 
                 </div>

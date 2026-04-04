@@ -26,6 +26,7 @@ function Members() {
 
     const navigate = useNavigate();
     const [members, setMembers] = useState<Member[]>([]);
+    const teamSize = members && members.length;
     
     useEffect(() => {
         fetch('/data/members.json')
@@ -58,12 +59,12 @@ function Members() {
                 <div className="content">
                     <img src="/images/steelhead_underwater.jpg" />
                     <div className="img-mask" />
-                    <h2>Meet <span>The Team</span></h2>
-                    <h4>
+                    <h2>Meet <strong>The Team</strong></h2>
+                    <p className="content-text-large">
                         United by curiosity and driven by purpose, our
                         <br />
-                        53+ team members bring unique skills and shared passion to every step of the journey!
-                    </h4>
+                        {teamSize}+ team members bring unique skills and shared passion to every step of the journey!
+                    </p>
                 </div>
 
             </section>

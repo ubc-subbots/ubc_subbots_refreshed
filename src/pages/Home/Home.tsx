@@ -1,6 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import { useRef, useLayoutEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus, faCircleRight } from '@fortawesome/free-solid-svg-icons';
+
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import './Home.css';
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
@@ -9,11 +14,52 @@ import Arrow from '../../assets/icons/arrow.svg?react';
 import Model from '../../components/Model/Model.tsx';
 import SponsorHighlightPanel from '../../components/Sponsors/HighlightPanel.tsx';
 
+gsap.registerPlugin(SplitText, ScrollTrigger);
+
 
 
 function Home() {
 
+    const textRef = useRef(null);
     const navigate = useNavigate();
+
+
+    useLayoutEffect(() => {
+        if (!textRef.current) return;
+
+        const split = new SplitText(textRef.current, {
+            type: "words",
+            wordsClass: "word",
+        });
+
+        split.words.forEach((word) => {
+            if (!word.parentNode) return;
+
+            const wrapper = document.createElement("span");
+            wrapper.classList.add("word-mask");
+
+            word.parentNode.insertBefore(wrapper, word);
+            wrapper.appendChild(word);
+        });
+
+        gsap.from(split.words, {
+            yPercent: 120,
+            // opacity: 0,
+            stagger: 0.01,
+            duration: 1.1,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: textRef.current,
+                start: "top 85%",
+                end: "top 100%",
+                toggleActions: "restart none restart reset",
+            },
+        });
+
+        return () => {
+            split.revert();
+        };
+    }, []);
 
 
     return (
@@ -36,13 +82,13 @@ function Home() {
                 <div className="about-inner">
 
                     <div className="content">
-                        <h2>Meet <span>Steelhead</span></h2>
-                        <h4>
+                        <h2>Meet <strong>Steelhead</strong></h2>
+                        <p className="content-text-large" ref={textRef}>
                             UBC Subbots is a student-led team that designs and builds autonomous underwater 
                             vehicles (AUVs) for the annual RoboSub competition in San Diego. We develop 
                             systems for navigation, waterproofing, hydrodynamics, and mechanical actuation, 
                             integrating expertise from engineering and computer science.
-                        </h4>
+                        </p>
                     </div>
 
                     <div className="display">
@@ -60,11 +106,11 @@ function Home() {
                     <SubbotsLogo className="background" />
 
                     <div className="content">
-                        <h2>Build <span><br />Underwater Robots</span></h2>
-                        <h4>
+                        <h2>Build <strong><br />Underwater Robots</strong></h2>
+                        <p className="content-text-large">
                             At UBC Subbots, we embrace students from all backgrounds and provide hands-on 
                             learning in a supportive, beginner-friendly environment.
-                        </h4>
+                        </p>
                         <button className="button-primary">
                             Join Us
                             <FontAwesomeIcon icon={faUserPlus} />

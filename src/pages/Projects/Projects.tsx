@@ -73,7 +73,7 @@ function Projects() {
                         <img src="/images/steelhead_swimming.jpg" />
                         <div className="img-mask" />
                         <div className="content">
-                            <h3>Software</h3>
+                            <h2><strong>Software</strong></h2>
                             <p>Create and refine subaquatic artificial intelligence</p>
                         </div>
                     </a>
@@ -82,7 +82,7 @@ function Projects() {
                         <img src="/images/steelhead_underwater.jpg" />
                         <div className="img-mask" />
                         <div className="content">
-                            <h3>Electrical</h3>
+                            <h2><strong>Electrical</strong></h2>
                             <p>Design the interface between the computer and the sea</p>
                         </div>
                     </a>
@@ -91,7 +91,7 @@ function Projects() {
                         <img src="/images/printing_tags.jpg" />
                         <div className="img-mask" />
                         <div className="content">
-                            <h3>Mechanical</h3>
+                            <h2><strong>Mechanical</strong></h2>
                             <p>Push the physical limits of underwater mechanics</p>
                         </div>
                     </a>
