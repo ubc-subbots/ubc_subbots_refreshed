@@ -44,13 +44,12 @@ function Home() {
 
         gsap.from(split.words, {
             yPercent: 120,
-            // opacity: 0,
             stagger: 0.01,
             duration: 1.1,
             ease: "power4.out",
             scrollTrigger: {
                 trigger: textRef.current,
-                start: "top 85%",
+                start: "top 100%",
                 end: "top 100%",
                 toggleActions: "restart none restart reset",
             },
