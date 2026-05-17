@@ -1,7 +1,7 @@
 [
   {
     "name": "Altium",
-    "logo": "altium.png",
+    "logo": "altium.svg",
     "website": "https://www.altium.com/",
     "description": "Altium Discover enables engineers to discover and explore solutions that align with real project needs and requirements—from design fit to downstream impact.",
     "tier": "gold",
@@ -17,7 +17,7 @@
   },
   {
     "name": "MatLab",
-    "logo": "matlab.png",
+    "logo": "matlab.svg",
     "website": "https://www.mathworks.com/products/matlab.html",
     "description": "description",
     "tier": "gold",
