@@ -11,7 +11,7 @@
     "name": "UBC Electrical and Computer Engineering",
     "logo": "ece.png",
     "website": "https://ece.ubc.ca/",
-    "description": "description",
+    "description": "UBC ECE provides facilities, mentorship, and academic support that empower our electrical and software subteams to design and test cutting-edge autonomous systems.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -19,7 +19,7 @@
     "name": "MatLab",
     "logo": "matlab.svg",
     "website": "https://www.mathworks.com/products/matlab.html",
-    "description": "description",
+    "description": "MATLAB provides our team with tools for numerical computing, simulation, and algorithm development.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -27,7 +27,7 @@
     "name": "UBC Applied Science",
     "logo": "ubc_apsc.jpg",
     "website": "https://apsc.ubc.ca/",
-    "description": "description",
+    "description": "UBC Applied Science supports student engineering teams across disciplines, providing resources and a community for hands-on technical work.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -35,7 +35,7 @@
     "name": "UBC Mechanical Engineering",
     "logo": "ubc_mech_eng.png",
     "website": "https://mech.ubc.ca/",
-    "description": "description",
+    "description": "UBC Mechanical Engineering gives our team access to fabrication facilities and expertise to bring physical designs to life.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -43,7 +43,7 @@
     "name": "Onshape",
     "logo": "onshape.svg",
     "website": "https://www.onshape.com/en/",
-    "description": "description",
+    "description": "Onshape's cloud-native CAD platform lets our mechanical team collaborate on designs in real time from anywhere.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -51,7 +51,7 @@
     "name": "UBC Integrated Engineering",
     "logo": "ubc_igen.png",
     "website": "https://www.integratedengineers.ca/",
-    "description": "description",
+    "description": "UBC Integrated Engineering connects students across faculties, reflecting the same cross-disciplinary approach that defines Subbots.",
     "tier": "gold",
     "theme": "cyan"
   },
