@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Software",
+        "image": "/images/steelhead_out_of_water.jpg",
+        "description": "Whereas the other teams construct the mechanical body of our robots, the software team acts as Frankenstein, giving life and thought to the cold, uncaring steel carcass. Maybe that’s an overexaggeration, but our main goal is to program the various autonomous tasks required for competition through the utilization of various control systems and sensors.",
+        "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
+        "projects": [
+                {
+                    "name": "Controls / Localization",
+                    "resources": ["ROS2", "Rviz", "Matlab"],
+                    "description": "The localization team focuses on the getting information side of the competition. Using algorithms such as SLAM, which uses various sensors such as a lidar and an imu, we try to map out the surroundings around us to find out where to go next. This team interacts a lot with the physical robot, as precise tuning of the sensors is necessary to achieve optimal and accurate readings. Now that we have a sense of where we are in the competition circuit, it's up to the controls team to control what happens next. Using mission planners decision trees, this team determines how we complete the various tasks of the competition. Additionally, there are a lot of factors underwater that make navigation quite difficult when there is a precise end location that we want to get to. This team deals with the various controls systems that make that navigation possible, such as PID.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Simulation",
+                    "resources": ["Gazebo", "Blender", "Rviz"],
+                    "description": "Given the nature of our competition, it can be hard to get access to a large body of water every single day. To mitigate that, we have a team dedicated to creating a realistic simulation that anybody can have access to at any time. The main goal is to make a parallel simulation that could be interswapped with the real thing at any time. This involves creating realistic hydrodynamic physics simulations, creating a realistic environment of the competition course, and various other tasks. Occasionally, we have to create models ourselves, so people with a diverse toolset of skills are encouraged.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Control Systems",
+                    "resources": ["YOLOv11"],
+                    "description": "We use the YOLOv11 object detection model and Intel Realsense RGB camera to detect labels underwater. We trained our YOLO model in two stages: first on images with game labels placed on the surface, then on images with game labels placed underwater. We used image augmentation techniques (saturation, cropping, zoom, etc.) to diversify our training dataset on each training epoch. We also sampled a portion of training data from the Blender environment that simulates game conditions. Finally, we validate our model on a custom real world dataset collected in the pool.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "DevOps",
+                    "resources": ["Docker"],
+                    "description": "DevOps builds the pipelines, tools, and interfaces to integrate the software components into a whole package. One of our main focuses is making our ROS stack easier to use. We set up Dockerfile and GitHub Actions to build Docker images on every commit. The ROS environment is now as simple as pulling a container and running it, while CI checks each commit and catches bugs early. We also made day-to-day operation friendlier by introducing a graphical dashboard, instead of using a command line. A graphical console built with Lichtblick and OliveTin allows click controls and see live telemetry and vision streams. Beyond the big projects, we invest in quality-of-life improvements: an internal network so everyone can connect to the robot at the same time, and autorun service to automatically trigger pre-determined routines on power-up.",
+                    "image": "/images/steelhead_underwater.jpg"
+                }
+            ]
+    },
+
+    {
+        "title": "Electrical",
+        "image": "/images/steelhead_out_of_water.jpg",
+        "description": "On the electrical team, we design the embedded systems that bring functionalities to the robot. We design, prototype, and integrate electrical components to ensure the sub can complete its tasks during competition. We work with PCB's, FPGA's, and microcontrollers to bring these functionalities to life.",
+        "categories": ["PCB Fabrication", "Voltage Regulation", "Wire Management", "Waterproofing"],
+        "projects": [
+                {
+                    "name": "Electronics",
+                    "resources": ["Altium/KiCAD", "SPICE"],
+                    "description": "Without power, the robot is just a floating (or sinking) hunk of metal in the water. Our robot needs power to run all the electronics in the robot. One of the main focuses of our team is to supply power to the components. We design a battery management system that monitors the conditions of the battery during operation and charging and to design a power distribution board to convert the battery voltage to the required operating voltages of the electronics. We also work with other sub-teams to aid designing and integrating circuitry to add other features such as depth sensors, cameras, and motor controllers.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Wiring - Legacy",
+                    "resources": ["Ros2", "OpenCV", "Gazebo"],
+                    "description": "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog circuitry to firmware/software. The high level diagram featured above shows one of the architectures we are currently considering for our system.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Battery Management - Legacy",
+                    "resources": ["Ros2", "OpenCV", "Gazebo"],
+                    "description": "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog circuitry to firmware/software. The high level diagram featured above shows one of the architectures we are currently considering for our system.",
+                    "image": "/images/steelhead_underwater.jpg"
+                }
+            ]
+    },
+
+    {
+        "title": "Mechanical",
+        "image": "/images/steelhead_out_of_water.jpg",
+        "description": "On the mechanical team, we design, prototype, and fabricate both the robot frame and all components that interact with the competition environment. We manufacture watertight enclosures, structural elements, and mechatronic assemblies built to withstand the challenges of underwater operation.",
+        "categories": ["Enclosure Manufacturing", "Manipulator Design", "3D Printing", "Hydrodynamics"],
+        "projects": [
+                {
+                    "name": "Claw",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "Every year's competition includes a task that involves moving target objects to specific locations. Our mechanical claw was created with these tasks in mind, with versatility and reliability at the core of its design. The claw's gear-based mechanism, driven by a high-performance servo motor, is a robust design that is easily controlled through a pulse-width modulation (PWM) control program. Its soft gripper pads are designed to conform to any object they come into contact with, and the angle of its arms are manually adjustable for even greater versatility.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Torpedo Launcher",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "A key part of the competition is our robot's ability to identify targets and launch projectiles through them. To achieve this, we designed our spring-loaded torpedo launcher. Its spring-based operation allows it to launch its projectiles with sufficient speed and accuracy while minimizing the system's complexity and without compromising safety. The torpedoes themselves were fabricated using stereolithography (SLA) 3D-printing, making them durable and dense enough to glide through the water without prematurely surfacing.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Dropper",
+                    "resources": ["Onshape", "Arduino"],
+                    "description": "During the competition, our robot needs to drop “markers” in specific locations. Our solution to this was a gravity-based mechanism that drops the markers by rotating them to align with carefully-placed slots in their housing components, allowing them to fall through and drop towards the target area. This approach allows each of the two markers to be released independently using a single servo motor, due to the angular offset between the slots for each marker. The droppers themselves were designed to facilitate a reliable downward trajectory and to remain immobile once making contact with the ground.",
+                    "image": "/images/steelhead_underwater.jpg"
+                }
+            ]
+    }
+]
