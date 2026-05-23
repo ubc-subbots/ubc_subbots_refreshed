@@ -135,6 +135,26 @@ span {
 }
 
 
+
+/* GSAP - Text Appear Animation */
+.gsap-text-reveal {
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .word-mask {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+
+  .word {
+    display: inline-block;
+  }
+}
+
+
 /* Stuff to remove scrollbars */
 html, body {
   height: 100%;

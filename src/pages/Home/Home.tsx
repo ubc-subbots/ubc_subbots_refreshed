@@ -20,43 +20,56 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 
 function Home() {
 
-    const textRef = useRef(null);
+    const textAnimRefs = useRef<HTMLParagraphElement[]>([]);
     const navigate = useNavigate();
 
+    const addTextRef = (el: HTMLParagraphElement | null): void => {
+        if (el && !textAnimRefs.current.includes(el)) {
+            textAnimRefs.current.push(el);
+        }
+    };
 
     useLayoutEffect(() => {
-        if (!textRef.current) return;
+        if (!textAnimRefs.current) return;
 
-        const split = new SplitText(textRef.current, {
-            type: "words",
-            wordsClass: "word",
-        });
+        const splits: SplitText[] = [];
 
-        split.words.forEach((word) => {
-            if (!word.parentNode) return;
+        textAnimRefs.current.forEach((text) => {
 
-            const wrapper = document.createElement("span");
-            wrapper.classList.add("word-mask");
+            const split = new SplitText(text, {
+                type: "words",
+                wordsClass: "word",
+            });
 
-            word.parentNode.insertBefore(wrapper, word);
-            wrapper.appendChild(word);
-        });
+            split.words.forEach((word) => {
+                if (!word.parentNode) return;
 
-        gsap.from(split.words, {
-            yPercent: 120,
-            stagger: 0.01,
-            duration: 1.1,
-            ease: "power4.out",
-            scrollTrigger: {
-                trigger: textRef.current,
-                start: "top 100%",
-                end: "top 100%",
-                toggleActions: "restart none restart reset",
-            },
-        });
+                const wrapper = document.createElement("span");
+                wrapper.classList.add("word-mask");
+
+                word.parentNode.insertBefore(wrapper, word);
+                wrapper.appendChild(word);
+            });
+
+            gsap.from(split.words, {
+                yPercent: 120,
+                stagger: 0.01,
+                duration: 1.1,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: text,
+                    start: "top 100%",
+                    end: "top 100%",
+                    toggleActions: "restart none restart reset",
+                },
+            });
+
+            splits.push(split);
+
+        })
 
         return () => {
-            split.revert();
+            splits.forEach((split) => split.revert());
         };
     }, []);
 
@@ -82,7 +95,7 @@ function Home() {
 
                     <div className="content">
                         <h2>Meet <strong>Steelhead</strong></h2>
-                        <p className="content-text-large" ref={textRef}>
+                        <p className="content-text-large gsap-text-reveal" ref={addTextRef}>
                             UBC Subbots is a student-led team that designs and builds autonomous underwater 
                             vehicles (AUVs) for the annual RoboSub competition in San Diego. We develop 
                             systems for navigation, waterproofing, hydrodynamics, and mechanical actuation, 
@@ -106,7 +119,7 @@ function Home() {
 
                     <div className="content">
                         <h2>Build <strong><br />Underwater Robots</strong></h2>
-                        <p className="content-text-large">
+                        <p className="content-text-large gsap-text-reveal" ref={addTextRef}>
                             At UBC Subbots, we embrace students from all backgrounds and provide hands-on 
                             learning in a supportive, beginner-friendly environment.
                         </p>
@@ -135,7 +148,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/printing_tags.jpg" />
+                                <img src="/images/steelhead_swimming.jpg" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">
@@ -146,7 +159,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/printing_tags.jpg" />
+                                <img src="/images/soldering_pcb.jpg" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">

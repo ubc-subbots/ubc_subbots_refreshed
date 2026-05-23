@@ -11,7 +11,7 @@
     "name": "UBC Electrical and Computer Engineering",
     "logo": "ece.png",
     "website": "https://ece.ubc.ca/",
-    "description": "description",
+    "description": "UBC Electrical and Computer Engineering focuses on the development of computer systems. This encapsulates the ability to design complete systems that include hardware and software elements, focusing not just on how computers work, but how to integrate them into larger systems.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -19,7 +19,7 @@
     "name": "MatLab",
     "logo": "matlab.png",
     "website": "https://www.mathworks.com/products/matlab.html",
-    "description": "description",
+    "description": "MATLAB is a high-level data analysis and visualization environment that is specifically designed for engineering workflows. Its extended ecosystem allows engineers to design and develop workflows, turning ideas into innovative, advanced engineered systems.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -27,7 +27,7 @@
     "name": "UBC Applied Science",
     "logo": "ubc_apsc.jpg",
     "website": "https://apsc.ubc.ca/",
-    "description": "description",
+    "description": "UBC Applied Science comprises a unique constellation of disciplines. Our core purpose is to discover, design, innovate, provide unwavering top-tier education and champion a community of responsible professionals.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -35,7 +35,7 @@
     "name": "UBC Mechanical Engineering",
     "logo": "ubc_mech_eng.png",
     "website": "https://mech.ubc.ca/",
-    "description": "description",
+    "description": "UBC's official Mechanical Engineering department. Mechanical Engineers use the science of movement to continuously innovate and advance solutions to the problems we face in our daily lives.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -43,7 +43,7 @@
     "name": "Onshape",
     "logo": "onshape.svg",
     "website": "https://www.onshape.com/en/",
-    "description": "description",
+    "description": "Onshape is an online Computer Aided Design tool that runs in your web browser. Only Onshape runs on any device, never crashes or loses data, and streamlines collaboration with branching & merging.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -51,7 +51,7 @@
     "name": "UBC Integrated Engineering",
     "logo": "ubc_igen.png",
     "website": "https://www.integratedengineers.ca/",
-    "description": "description",
+    "description": "UBC Integrated Engineering (IGEN) is a program that provides a multidisciplinary education by developing a core competency in all aspects of engineering fundamentals.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -59,7 +59,7 @@
     "name": "Pressing Media",
     "logo": "pressing_media.png",
     "website": "https://pressing-media.com/",
-    "description": "description",
+    "description": "Instead of traditional one-size-fits-all printing services, Pressing Media provided custom quotes for your printing needs, understanding your needs, and staying flexible.",
     "tier": "gold",
     "theme": "cyan"
   }

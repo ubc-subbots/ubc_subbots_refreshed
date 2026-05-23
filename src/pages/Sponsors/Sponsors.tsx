@@ -22,7 +22,8 @@ function Sponsors() {
             <SponsorCatalog />
 
 
-            <section className="tiers">
+            {/* RE-ADD WHEN TIERS FINALIZED */
+            /* <section className="tiers">
 
                 <div className="title">
                     <h2>Tiers</h2>
@@ -30,7 +31,7 @@ function Sponsors() {
 
                 <SponsorTiers />
 
-            </section>
+            </section> */}
 
             <section className="sponsor-cta">
                 <div className="sponsor-cta-inner">
