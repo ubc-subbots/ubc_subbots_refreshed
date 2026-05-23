@@ -1,7 +1,7 @@
 import SponsorCatalog from '../../components/SponsorCatalog/SponsorCatalog.tsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
 
 import './Sponsors.css';
