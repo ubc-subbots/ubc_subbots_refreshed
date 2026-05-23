@@ -21,8 +21,15 @@
 
                 {
                     "name": "Control Systems",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "Our computer vision simulation in action. The program manges to distinguish our test image 'Lena' from the underwater surroundings.One quirk about underwater images is that the farther away an object is, the greener it looks. Light behaves differently underwater than on land due to scattering and absorption, meaning if we want our camera simulation to look realistic, we need to model the behaviour of light. A key component of our simulation is underwater image synthesis, which takes an RGBD image (colour and depth) rendered in our simulation and generates an RGB image of an underwater scene.",
+                    "resources": ["YOLOv11"],
+                    "description": "We use the YOLOv11 object detection model and Intel Realsense RGB camera to detect labels underwater. We trained our YOLO model in two stages: first on images with game labels placed on the surface, then on images with game labels placed underwater. We used image augmentation techniques (saturation, cropping, zoom, etc.) to diversify our training dataset on each training epoch. We also sampled a portion of training data from the Blender environment that simulates game conditions. Finally, we validate our model on a custom real world dataset collected in the pool.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "DevOps",
+                    "resources": ["Docker"],
+                    "description": "DevOps builds the pipelines, tools, and interfaces to integrate the software components into a whole package. One of our main focuses is making our ROS stack easier to use. We set up Dockerfile and GitHub Actions to build Docker images on every commit. The ROS environment is now as simple as pulling a container and running it, while CI checks each commit and catches bugs early. We also made day-to-day operation friendlier by introducing a graphical dashboard, instead of using a command line. A graphical console built with Lichtblick and OliveTin allows click controls and see live telemetry and vision streams. Beyond the big projects, we invest in quality-of-life improvements: an internal network so everyone can connect to the robot at the same time, and autorun service to automatically trigger pre-determined routines on power-up.",
                     "image": "/images/steelhead_underwater.jpg"
                 }
             ]
@@ -31,25 +38,25 @@
     {
         "title": "Electrical",
         "image": "/images/steelhead_out_of_water.jpg",
-        "description": "Developing autonomous underwater navigation systems, implementing computer vision algorithms, controlling thrusters for precise movement, managing torpedo and manipulator actuators, and integrating everything into a single cohesive autonomous platform.",
-        "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
+        "description": "On the electrical team, we design the embedded systems that bring functionalities to the robot. We design, prototype, and integrate electrical components to ensure the sub can complete its tasks during competition. We work with PCB's, FPGA's, and microcontrollers to bring these functionalities to life.",
+        "categories": ["PCB Fabrication", "Voltage Regulation", "Wire Management", "Waterproofing"],
         "projects": [
                 {
-                    "name": "Sound Localization",
+                    "name": "Electronics",
+                    "resources": ["Altium/KiCAD", "SPICE"],
+                    "description": "Without power, the robot is just a floating (or sinking) hunk of metal in the water. Our robot needs power to run all the electronics in the robot. One of the main focuses of our team is to supply power to the components. We design a battery management system that monitors the conditions of the battery during operation and charging and to design a power distribution board to convert the battery voltage to the required operating voltages of the electronics. We also work with other sub-teams to aid designing and integrating circuitry to add other features such as depth sensors, cameras, and motor controllers.",
+                    "image": "/images/steelhead_underwater.jpg"
+                },
+
+                {
+                    "name": "Wiring - Legacy",
                     "resources": ["Ros2", "OpenCV", "Gazebo"],
                     "description": "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog circuitry to firmware/software. The high level diagram featured above shows one of the architectures we are currently considering for our system.",
                     "image": "/images/steelhead_underwater.jpg"
                 },
 
                 {
-                    "name": "Wiring",
-                    "resources": ["Ros2", "OpenCV", "Gazebo"],
-                    "description": "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog circuitry to firmware/software. The high level diagram featured above shows one of the architectures we are currently considering for our system.",
-                    "image": "/images/steelhead_underwater.jpg"
-                },
-
-                {
-                    "name": "Battery Management",
+                    "name": "Battery Management - Legacy",
                     "resources": ["Ros2", "OpenCV", "Gazebo"],
                     "description": "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog circuitry to firmware/software. The high level diagram featured above shows one of the architectures we are currently considering for our system.",
                     "image": "/images/steelhead_underwater.jpg"
@@ -60,8 +67,8 @@
     {
         "title": "Mechanical",
         "image": "/images/steelhead_out_of_water.jpg",
-        "description": "Developing autonomous underwater navigation systems, implementing computer vision algorithms, controlling thrusters for precise movement, managing torpedo and manipulator actuators, and integrating everything into a single cohesive autonomous platform.",
-        "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
+        "description": "On the mechanical team, we design, prototype, and fabricate both the robot frame and all components that interact with the competition environment. We manufacture watertight enclosures, structural elements, and mechatronic assemblies built to withstand the challenges of underwater operation.",
+        "categories": ["Enclosure Manufacturing", "Manipulator Design", "3D Printing", "Hydrodynamics"],
         "projects": [
                 {
                     "name": "Claw",

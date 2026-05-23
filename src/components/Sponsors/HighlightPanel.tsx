@@ -40,6 +40,7 @@ function HighlightPanel() {
 
             <div className="panel-display">
                 <img src="/images/pulling_steelhead_out_of_water.jpg" />
+                <div className="content-mask" />
 
                 <div className="content">
                     <img 
@@ -47,7 +48,7 @@ function HighlightPanel() {
                             currentHover !== null &&
                             currentHover >= 0 &&
                             currentHover < sponsors.length
-                                ? sponsors[currentHover].logo
+                                ? "images/logos/" + sponsors[currentHover].logo
                                 : ""
                         } 
                     />

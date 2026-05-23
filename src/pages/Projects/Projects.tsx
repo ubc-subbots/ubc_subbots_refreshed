@@ -79,7 +79,7 @@ function Projects() {
                     </a>
 
                     <a href='#Electrical' className="subteam-option">
-                        <img src="/images/steelhead_underwater.jpg" />
+                        <img src="/images/soldering_pcb.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Electrical</strong></h2>
