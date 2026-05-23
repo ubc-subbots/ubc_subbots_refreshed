@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr';
 import postcssNested from 'postcss-nested';
 
 export default defineConfig({
+  base: '/ubc_subbots_refreshed/',
   plugins: [
     react(),
     svgr(),
