@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { Canvas } from '@react-three/fiber';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { OrbitControls } from '@react-three/drei';
 
 
@@ -13,12 +14,18 @@ interface modelProps {
     rotateSpeed: number;
 }
 
+function SteelheadModelAsync() {
+    const gltf = useLoader(GLTFLoader, '/model/compressed_steelhead.glb', (loader) => {
+        const dracoLoader = new DRACOLoader();
+        dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/');
+        loader.setDRACOLoader(dracoLoader);
+    });
+
+    return <primitive object={gltf.scene} />;
+}
+
 function Model({ backgroundColor, rotateSpeed }: modelProps) {
-
-    const gltf = useLoader(GLTFLoader, '/model/steelhead.glb');
-
     return (
-
         <Canvas
             shadows
             camera={{ position: [0, 0, 5], fov: 12 }}
@@ -48,7 +55,7 @@ function Model({ backgroundColor, rotateSpeed }: modelProps) {
                     <shadowMaterial opacity={0.3} />
                 </mesh>
 
-                <primitive object={gltf.scene} />
+                <SteelheadModelAsync />
             </Suspense>
 
             <OrbitControls
@@ -58,7 +65,6 @@ function Model({ backgroundColor, rotateSpeed }: modelProps) {
                 enablePan={true}
             />
         </Canvas>
-
     );
 }
 
