@@ -57,7 +57,7 @@ function Members() {
                 </div> */}
 
                 <div className="content">
-                    <img src="/images/steelhead_underwater.jpg" />
+                    <img src="/images/waiting_poolside.jpg" />
                     <div className="img-mask" />
                     <h2>Meet <strong>The Team</strong></h2>
                     <p className="content-text-large">

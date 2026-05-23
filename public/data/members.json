@@ -69,19 +69,6 @@
   },
   {
     "team": "actuators",
-    "firstName": "Lyndon",
-    "lastName": "Lam",
-    "role": "member",
-    "image": "",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "actuators",
     "firstName": "Artur",
     "lastName": "Graefenstein",
     "role": "member",
@@ -91,19 +78,6 @@
       "instagram": "",
       "github": "",
       "email": "arturkag6002@gmail.com"
-    }
-  },
-  {
-    "team": "actuators",
-    "firstName": "Cynthia",
-    "lastName": "Ikpah",
-    "role": "member",
-    "image": "",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
     }
   },
   {
@@ -127,19 +101,6 @@
     "image": "yasin_kurji.jpg",
     "media": {
       "linkedIn": "https://www.linkedin.com/in/yasinkurji",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "actuators",
-    "firstName": "Aldiyar",
-    "lastName": "Mukatay",
-    "role": "member",
-    "image": "aldiyar_mukatay.jpg",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/aldiyar-mukatay/",
       "instagram": "",
       "github": "",
       "email": ""
@@ -231,19 +192,6 @@
   },
   {
     "team": "electrical",
-    "firstName": "Samuel",
-    "lastName": "Wu",
-    "role": "member",
-    "image": "samuel_wu.jpg",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "electrical",
     "firstName": "Malak",
     "lastName": "Ali",
     "role": "member",
@@ -259,19 +207,6 @@
     "team": "electrical",
     "firstName": "David",
     "lastName": "Li Lam",
-    "role": "member",
-    "image": "",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "electrical",
-    "firstName": "Oliver",
-    "lastName": "Hua",
     "role": "member",
     "image": "",
     "media": {
@@ -300,32 +235,6 @@
     "lastName": "Zhu",
     "role": "member",
     "image": "emma_zhu.jpg",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "electrical",
-    "firstName": "Mark",
-    "lastName": "Tan",
-    "role": "member",
-    "image": "",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "electrical",
-    "firstName": "Vivian",
-    "lastName": "Huang",
-    "role": "member",
-    "image": "",
     "media": {
       "linkedIn": "",
       "instagram": "",
@@ -458,19 +367,6 @@
   },
   {
     "team": "software",
-    "firstName": "Joel",
-    "lastName": "Hempel",
-    "role": "lead",
-    "image": "joel_hempel.jpg",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/joelhempel",
-      "instagram": "",
-      "github": "",
-      "email": "joelhempel35@gmail.com"
-    }
-  },
-  {
-    "team": "software",
     "firstName": "Fei",
     "lastName": "Kuan",
     "role": "lead",
@@ -549,34 +445,8 @@
   },
   {
     "team": "software",
-    "firstName": "Warren",
-    "lastName": "Dmello",
-    "role": "member",
-    "image": "warren_dmello.jpg",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/warrenlukedmello/",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "software",
     "firstName": "Griffin",
     "lastName": "Ng",
-    "role": "member",
-    "image": "",
-    "media": {
-      "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "software",
-    "firstName": "Marius",
-    "lastName": "Shepherd",
     "role": "member",
     "image": "",
     "media": {
@@ -643,19 +513,6 @@
   },
   {
     "team": "sound localization",
-    "firstName": "Daniel",
-    "lastName": "Kim",
-    "role": "member",
-    "image": "daniel_kim.png",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/danielkim2374/",
-      "instagram": "",
-      "github": "https://github.com/ecedaniel",
-      "email": ""
-    }
-  },
-  {
-    "team": "sound localization",
     "firstName": "Mehreen Mohammed",
     "lastName": "Arif",
     "role": "member",
@@ -689,19 +546,6 @@
     "media": {
       "linkedIn": "http://linkedin.com/in/elizabethlim09",
       "instagram": "https://www.instagram.com/elizabethj_lim/",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "sound localization",
-    "firstName": "Chloe",
-    "lastName": "Sun",
-    "role": "member",
-    "image": "chloe_sun.jpg",
-    "media": {
-      "linkedIn": "",
-      "instagram": "https://www.instagram.com/seele.qwq/?utm_source=ig_web_button_share_sheet",
       "github": "",
       "email": ""
     }

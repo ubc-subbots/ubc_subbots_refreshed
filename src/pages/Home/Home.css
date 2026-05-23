@@ -63,21 +63,6 @@
                 h2 {
                     margin-bottom: var(--block-gap-reduced)
                 }
-
-                span {
-                    font-size: inherit;
-                    font-weight: inherit;
-                }
-
-                .word-mask {
-                    display: inline-block;
-                    overflow: hidden;
-                    vertical-align: bottom;
-                }
-
-                .word {
-                    display: inline-block;
-                }
             }
 
             .display {

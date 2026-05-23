@@ -19,7 +19,7 @@
     "name": "MatLab",
     "logo": "matlab.svg",
     "website": "https://www.mathworks.com/products/matlab.html",
-    "description": "MATLAB provides our team with tools for numerical computing, simulation, and algorithm development.",
+    "description": "MATLAB is a high-level data analysis and visualization environment that is specifically designed for engineering workflows. Its extended ecosystem allows engineers to design and develop workflows, turning ideas into innovative, advanced engineered systems.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -43,7 +43,7 @@
     "name": "Onshape",
     "logo": "onshape.svg",
     "website": "https://www.onshape.com/en/",
-    "description": "Onshape's cloud-native CAD platform lets our mechanical team collaborate on designs in real time from anywhere.",
+    "description": "Onshape is an online Computer Aided Design tool that runs in your web browser. Only Onshape runs on any device, never crashes or loses data, and streamlines collaboration with branching & merging.",
     "tier": "gold",
     "theme": "cyan"
   },
@@ -59,7 +59,7 @@
     "name": "Pressing Media",
     "logo": "pressing_media.png",
     "website": "https://pressing-media.com/",
-    "description": "description",
+    "description": "Instead of traditional one-size-fits-all printing services, Pressing Media provided custom quotes for your printing needs, understanding your needs, and staying flexible.",
     "tier": "gold",
     "theme": "cyan"
   }
