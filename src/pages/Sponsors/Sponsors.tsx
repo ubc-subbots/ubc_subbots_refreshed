@@ -1,7 +1,7 @@
 import SponsorCatalog from '../../components/SponsorCatalog/SponsorCatalog.tsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
 
 import './Sponsors.css';
@@ -41,10 +41,15 @@ function Sponsors() {
                     <div className="divider" />
 
                     <div className="content">
-                        <button className="button-primary">
-                            Email Us
-                            <FontAwesomeIcon icon={faEnvelope} />
-                        </button>
+                        {/* <button className="button-primary">
+                            Make A Donation
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </button> */}
+
+                        <a href = "https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561" target="_blank" rel="noopener noreferror" className="button-primary">
+                            Donate
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
 
                         <p className="content-text-large">
                             Your contributions directly support design teams in BC. 

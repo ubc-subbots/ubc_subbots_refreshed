@@ -57,10 +57,11 @@
                 aspect-ratio: 1 / 1;
                 z-index: -1;
                 color: var(--dark-green);
-                opacity: 0.15;
+                opacity: 0.12;
                 transform-origin: center;
                 left: -20%;
                 top: -80%;
+                
             }
 
             .divider {
@@ -70,14 +71,27 @@
             }
 
             .content {
+                /* display: grid;
+                grid-template-columns: repeat(2, 1fr); */
+
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr auto;
+                align-items: center;
+                gap: 48px;
 
-
-                button {
+                a.button-primary {
                     align-self: start;
                     justify-self: start;
+                    width: fit-content !important;
+                    height: auto !important;
+                    padding: 14px 44px;
+                    font-size: 1.2rem;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    aspect-ratio: unset !important;
                 }
+
 
                 > h4 {
                     font-weight: 400;
