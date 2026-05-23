@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faAnchor } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,7 +23,6 @@ interface Member {
 
 function Members() {
 
-    const navigate = useNavigate();
     const [members, setMembers] = useState<Member[]>([]);
     const teamSize = members && members.length;
     

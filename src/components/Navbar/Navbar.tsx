@@ -34,7 +34,7 @@ function Navbar() {
                             <div onClick={() => navigate("/")}>Home</div>
                             <div onClick={() => navigate("/projects")}>Projects</div>
                             <div onClick={() => navigate("/members")}>Members</div>
-                            <div onClick={() => navigate("/robots")}>Robots</div>
+                            {/* <div onClick={() => navigate("/robots")}>Robots</div> */}
                             <div onClick={() => navigate("/sponsors")}>Sponsors</div>
                         </div>
                     </div>

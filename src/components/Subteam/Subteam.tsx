@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
 
 import './Subteam.css';

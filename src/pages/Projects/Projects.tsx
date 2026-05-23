@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Subteam from '../../components/Subteam/Subteam.tsx';
 import ProjectItem from '../../components/ProjectItem/ProjectItem.tsx';
 
@@ -24,7 +23,6 @@ interface Project {
 
 function Projects() {
 
-    const navigate = useNavigate();
     const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(() => {

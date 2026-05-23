@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
 import SponsorCatalog from '../../components/SponsorCatalog/SponsorCatalog.tsx';
-import SponsorTiers from '../../components/SponsorTiers/SponsorTiers.tsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

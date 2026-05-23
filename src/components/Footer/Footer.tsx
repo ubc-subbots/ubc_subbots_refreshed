@@ -27,7 +27,7 @@ function Footer() {
                     <a onClick={() => navigateAndClose("/")}>Home</a>
                     <a onClick={() => navigateAndClose("/projects")}>Projects</a>
                     <a onClick={() => navigateAndClose("/members")}>Members</a>
-                    <a onClick={() => navigateAndClose("/robots")}>Robots</a>
+                    {/* <a onClick={() => navigateAndClose("/robots")}>Robots</a> */}
                     <a onClick={() => navigateAndClose("/sponsors")}>Sponsor</a>
                 </div>
 

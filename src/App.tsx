@@ -1,7 +1,6 @@
 import './App.css'
-import ReactDOM from 'react-dom/client';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 
 import LoadingScreen from './components/LoadingScreen/LoadingScreen.tsx';
 import Home from './pages/Home/Home.tsx';

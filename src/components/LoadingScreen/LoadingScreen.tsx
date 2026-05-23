@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './LoadingScreen.css';
 
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
