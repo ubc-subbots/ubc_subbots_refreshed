@@ -50,9 +50,12 @@
 
 
                     img {
-                        width: 60%;
-                        height: min-content;
-                        object-fit: cover;
+                        width: 65%;
+                        height: 140px;
+                        object-fit: contain;
+                        padding: 12px;
+                        /* height: min-content;
+                        object-fit: cover; */
                     }
 
                     .underline {
