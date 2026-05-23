@@ -3,7 +3,7 @@ import SponsorCatalog from '../../components/SponsorCatalog/SponsorCatalog.tsx';
 import SponsorTiers from '../../components/SponsorTiers/SponsorTiers.tsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import SubbotsLogo from '../../assets/icons/subbots.svg?react';
 
 import './Sponsors.css';
