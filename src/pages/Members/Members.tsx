@@ -90,7 +90,7 @@ function MemberItem({ member }: MemberItemProps) {
 
     return (
         <div className="member-item">
-            <img src={member.image !== ""? `/images/members/${member.image}` : '/images/subbots_logo_yellow_round.png'} />
+            <img src={member.image !== ""? `/images/members/${member.image}` : '/images/members/placeholder.png'} />
             <h4>
                 {member.firstName}
                 <br />
