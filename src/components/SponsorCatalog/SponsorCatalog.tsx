@@ -60,8 +60,6 @@ function SponsorCatalog() {
     return (
         <section className="sponsor-catalog">
 
-            <h2>Our Sponsors</h2>
-
             <div className="scroll-x-container" ref={scrollRef}>
                 <div className="sponsor-deck">
                     {sponsorDeck}

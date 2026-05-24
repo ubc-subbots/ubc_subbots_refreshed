@@ -52,7 +52,7 @@
 
             img {
                 object-fit: cover;
-                height: 100%;
+                height: 40rem;
                 width: 100%;
                 border-radius: var(--border-radius-normal);
             }
@@ -86,4 +86,8 @@
             }
         }
     }
+}
+
+.project-option {
+    cursor: pointer;
 }

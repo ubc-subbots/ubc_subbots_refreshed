@@ -55,7 +55,7 @@ function Members() {
                 </div> */}
 
                 <div className="content">
-                    <img src="/images/waiting_poolside.jpg" />
+                    <img src="/images/team_photo.jpg" />
                     <div className="img-mask" />
                     <h2>Meet <strong>The Team</strong></h2>
                     <p className="content-text-large">
@@ -64,8 +64,12 @@ function Members() {
                         {teamSize}+ team members bring unique skills and shared passion to every step of the journey!
                     </p>
                 </div>
-
+                
             </section>
+
+            <div className="legend">
+                <FontAwesomeIcon icon={faAnchor} /> = Team Lead
+            </div>
 
 
             {Object.entries(membersByTeam).map(([team, teamMembers]) => (

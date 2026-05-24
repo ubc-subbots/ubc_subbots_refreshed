@@ -50,10 +50,26 @@
         }
     }
 
+    .legend {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 1.8rem;
+        margin-left: 8.0rem;
+        svg {
+            transform: rotateZ(-27deg);
+            aspect-ratio: 1 / 1;
+            width: 50px;
+            height: auto;
+            color: var(--yellow);
+        }
+    }
 
     .factorygen-member-section {
         width: 100%;
-        padding: var(--padding-large);
+        padding: var(--padding-small);
         box-sizing: border-box;
         display: flex;
         justify-content: center;

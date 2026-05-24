@@ -66,9 +66,9 @@ function Projects() {
                 </div> */}
 
                 <section className="subteam-selector">
-
+                    
                     <a href='#Software' className="subteam-option" >
-                        <img src="/images/steelhead_swimming.jpg" />
+                        <img src="/images/rviz.png" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Software</strong></h2>
@@ -86,7 +86,7 @@ function Projects() {
                     </a>
 
                     <a href='#Mechanical' className="subteam-option">
-                        <img src="/images/printing_tags.jpg" />
+                        <img src="/images/steelhead_upshot.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Mechanical</strong></h2>

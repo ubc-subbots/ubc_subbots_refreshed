@@ -148,7 +148,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/steelhead_swimming.jpg" />
+                                <img src="/images/rviz.png" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">
@@ -170,7 +170,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/printing_tags.jpg" />
+                                <img src="/images/steelhead_upshot.jpg" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">
@@ -200,13 +200,13 @@ function Home() {
 
 
             <section className="sponsor-cta">
-                <div className="sponsor-cta-inner-wrapper" onClick={() => navigate("/sponsors")}>
+                <div className="sponsor-cta-inner-wrapper">
                     <div className="sponsor-cta-inner">
 
                         <div className="cta-content">
                             <h1>Invest In<br />Tomorrow</h1>
 
-                            <div className="arrow-animation">
+                            <div className="arrow-animation" onClick={() => navigate("/sponsors")}>
                                 <div className="arrow-animation-wrapper">
                                     <FontAwesomeIcon icon={faCircleRight} />
                                     <FontAwesomeIcon icon={faCircleRight} />

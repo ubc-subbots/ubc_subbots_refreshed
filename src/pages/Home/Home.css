@@ -195,6 +195,7 @@
                             height: 100%;
                             background-image: linear-gradient(12deg, rgb(0, 0, 0, 0.5) 0%, transparent 75%);
                             transition: 0.2s ease;
+                            cursor: pointer;
                         }
                     }
 
@@ -278,7 +279,7 @@
         .sponsor-cta-inner-wrapper {
             width: 100%;
             height: 100%;
-            background: var(--dark-green) url("images/steelhead_swimming.jpg") no-repeat left center;
+            background: var(--dark-green) url("images/waiting_poolside.jpg") no-repeat left center;
             background-size: cover;
             backdrop-filter: brightness(0.7);
             display: flex;
@@ -304,6 +305,7 @@
 
                     h1 {
                         color: var(--white);
+                        text-shadow: 0px 0px 30px rgba(0, 0, 0, 1.0);
                     }
 
                     .arrow-animation {
@@ -312,6 +314,7 @@
                         aspect-ratio: 1 / 1;
                         display: flex;
                         gap: 50px;
+                        cursor: pointer;
 
                         .arrow-animation-wrapper {
                             height: 100%;
