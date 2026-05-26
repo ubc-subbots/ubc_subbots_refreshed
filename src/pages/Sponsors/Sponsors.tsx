@@ -13,7 +13,7 @@ function Sponsors() {
         <section className="Sponsors">
 
             <div className="playable-thumbnail">
-                <h2 style={{color:'white'}}>Our<strong> Sponsors</strong></h2> 
+                <h2>Our <strong>Sponsors</strong></h2>
             </div>
 
 

@@ -1,6 +1,7 @@
 .Home {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
 
     .playable-thumbnail {
@@ -43,7 +44,7 @@
     .about {
         padding-block: var(--padding-regular);
         margin-inline: auto;
-        width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
+        width: clamp(var(--minimum-content-width), 90%, var(--maximum-content-width));
         border-bottom: 1px solid var(--black);
         display: flex;
         justify-content: center;
@@ -83,11 +84,12 @@
     .joinus {
         padding-block: var(--padding-large);
         margin-inline: auto;
-        width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
+        width: clamp(var(--minimum-content-width), 90%, var(--maximum-content-width));
         display: flex;
         justify-content: center;
         border-top: 1px solid var(--black);
-        overflow: hidden;
+        overflow-y: clip;
+        overflow-x: visible;
 
 
         .joinus-inner {
@@ -349,28 +351,35 @@
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
     .Home {
-        
+
         .subteams {
 
-            .subteams-inner {
+            .subteam-panel {
+                grid-template-columns: 1fr 1fr !important;
+            }
 
-                .subteam-panel {
-                    
-                    .subteam-card {
-                        aspect-ratio: unset;
-                    }
-                }
+            .card-content {
+                transform: translateY(0%) !important;
+                opacity: 1 !important;
             }
         }
     }
 }
 
+
 @media (max-width: 600px) {
     .Home {
+        .playable-thumbnail {
+
+            justify-content: center;
+        }
         .about {
-            grid-template-columns: 1fr !important;
+            
+            .about-inner {
+                grid-template-columns: 1fr !important;
+            }
 
             .content {
                 grid-row: 2;
@@ -383,7 +392,17 @@
         }
 
         .joinus {
-            flex-direction: column-reverse;
+
+            .joinus-inner {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .subteams {
+
+            .subteam-panel {
+                grid-template-columns: 1fr !important;
+            }
         }
     }
 }
