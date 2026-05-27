@@ -130,15 +130,17 @@
 
 
 @media (max-width: 1024px) {
-    .navigator {
-        display: none !important;
-    }
+    .navbar {
+        .navigator {
+            display: none !important;
+        }
 
-    .mobile-menu {
-        display: block !important;
-    }
+        .mobile-menu {
+            display: block !important;
+        }
 
-    .menu {
-        display: block !important;
+        .menu {
+            display: block !important;
+        }
     }
 }

@@ -105,3 +105,17 @@
         }
     }
 }
+
+
+@media (max-width: 600px) {
+    .Sponsors {
+
+        .sponsor-cta {
+
+            .content {
+                grid-template-columns: auto !important;
+                gap: var(--block-gap-reduced) !important;
+            }
+        }
+    }
+}

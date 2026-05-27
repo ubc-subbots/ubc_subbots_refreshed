@@ -138,3 +138,50 @@
         }
     }
 }
+
+
+
+@media (max-width: 1080px) {
+    .footer {
+        height: 400px;
+
+        .navigator {
+            flex: 1.5 1 0;
+        }
+
+        .content {
+
+            .content-left {
+                gap: var(--block-gap-reduced);
+            }
+
+            .content-right {
+                aspect-ratio: 5 / 4;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: flex;
+        height: 500px;
+        gap: var(--block-gap-reduced);
+
+        .navigator {
+            flex: 1 1 0;
+        }
+
+        .content {
+            flex-direction: column;
+
+            .content-left {
+                height: 80%;
+            }
+
+            .content-right {
+                aspect-ratio: unset;
+            }
+        }
+    }
+}

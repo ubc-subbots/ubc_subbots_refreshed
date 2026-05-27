@@ -83,3 +83,84 @@
     }
 
 }
+
+
+
+@media (max-width: 1080px) {
+    .Projects {
+
+        .subteam-selector {
+            grid-template-columns: auto !important;
+
+
+            .subteam-option img {
+                filter: saturate(1) !important;
+            }
+
+            .subteam-option .content {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+            }
+        }
+
+        .subteam {
+
+            .subteam-content {
+                flex-direction: column;
+                gap: var(--block-gap-reduced);
+                padding: 0px;
+            }
+
+            .content-left {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .project-info {
+
+            .option-header {
+                grid-auto-flow: unset;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .option-display {
+                grid-template-columns: auto;
+                gap: var(--block-gap);
+                width: 100%;
+                
+                > img {
+                    height: 30rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .Projects {
+
+        .subteam {
+
+            .content-left {
+                display: none;
+            }
+        }
+
+        .project-info {
+
+            .option-display {
+                grid-template-columns: auto;
+                gap: var(--block-gap);
+                width: 100%;
+                padding-inline: 0;
+                
+                > img {
+                    height: 20rem;
+                }
+            }
+        }
+    }
+}
