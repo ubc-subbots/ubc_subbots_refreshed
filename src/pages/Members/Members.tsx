@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faAnchor } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faAnchor, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './Members.css';
 
@@ -92,15 +93,33 @@ function MemberItem({ member }: MemberItemProps) {
         return role === "lead";
     }
 
+    const links = [
+        { href: member.media.linkedIn, icon: faLinkedin, label: "LinkedIn" },
+        { href: member.media.instagram, icon: faInstagram, label: "Instagram" },
+        { href: member.media.github, icon: faGithub, label: "GitHub" },
+        { href: member.media.email ? `mailto:${member.media.email}` : "", icon: faEnvelope, label: "Email" },
+
+    ].filter(link => link.href !== ""); // Filter out empty links
+
     return (
         <div className="member-item">
-            <img src={member.image !== ""? `/images/members/${member.image}` : '/images/members/placeholder.png'} />
+            <div className="member-image-wrapper">
+                <img src={member.image !== "" ? `/images/members/${member.image}` : '/images/members/placeholder.png'} />
+                {links.length > 0 && (
+                    <div className="member-overlay">
+                        {links.map(link => (
+                            <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                                <FontAwesomeIcon icon={link.icon} />
+                            </a>
+                        ))}
+                    </div>
+                )}
+            </div>
             <h4>
                 {member.firstName}
                 <br />
                 <span>{member.lastName}</span>
             </h4>
-
             {isLead(member.role) ? <FontAwesomeIcon icon={faAnchor} /> : <></>}
         </div>
     );
