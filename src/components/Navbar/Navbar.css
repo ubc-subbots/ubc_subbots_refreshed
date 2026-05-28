@@ -142,5 +142,9 @@
         .menu {
             display: block !important;
         }
+
+        .navbar-right {
+            gap: 20px !important;
+        }
     }
 }

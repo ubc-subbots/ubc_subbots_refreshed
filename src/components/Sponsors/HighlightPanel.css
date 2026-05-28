@@ -119,3 +119,20 @@
         }
     }
 }
+
+
+
+@media (max-width: 1080px) {
+    .highlight-panel {
+        flex-direction: column-reverse;
+
+
+        .highlight-card svg {
+            top: 50% !important;
+        }
+
+        svg {
+            height: 25px !important;
+        }
+    }
+}

@@ -365,6 +365,14 @@
                 opacity: 1 !important;
             }
         }
+
+        .sponsor-cta {
+            height: 300px !important;
+
+            .arrow-animation-wrapper {
+                transform: translateX(0px) !important;
+            }
+        }
     }
 }
 
@@ -402,6 +410,20 @@
 
             .subteam-panel {
                 grid-template-columns: 1fr !important;
+            }
+        }
+
+        .sponsor-cta {
+
+            .cta-content {
+                justify-content: center !important;
+                align-items: start !important;
+                flex-direction: column;
+                gap: var(--block-gap-reduced);
+            }
+
+            .arrow-animation {
+                height: 30% !important;
             }
         }
     }
