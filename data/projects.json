@@ -80,7 +80,7 @@
                 {
                     "name": "Dropper",
                     "resources": ["Onshape", "Arduino"],
-                    "description": "During the competition, our robot needs to drop “markers” in specific locations. Our solution to this was a gravity-based mechanism that drops the markers by rotating them to align with carefully-placed slots in their housing components, allowing them to fall through and drop towards the target area. This approach allows each of the two markers to be released independently using a single servo motor, due to the angular offset between the slots for each marker. The droppers themselves were designed to facilitate a reliable downward trajectory and to remain immobile once making contact with the ground.",
+                    "description": "During the competition, our robot needs to drop “markers” in specific locations. Our solution to this was a gravity-based mechanism that drops the markers using the same servo motor that controls the claw. Opening the claw allows the first marker to fall, while simultaneously blocking the second marker. Once the claw closes again, the second marker moves into place for deployment. This design allows each marker to be deployed independently with minimal increases to cost or control complexity. The markers themselves were designed with hydrodynamics in mind to facilitate a reliable downward trajectory.",
                     "image": "/images/projects_mechanical_dropper.jpg"
                 }
             ]
