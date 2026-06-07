@@ -483,7 +483,19 @@
     }
   },
 
-
+  {
+    "team": "sound localization",
+    "firstName": "Peter",
+    "lastName": "van den Doel",
+    "role": "lead",
+    "image": "peter_van_den_doel.jpeg",
+    "media": {
+      "linkedIn": "https://www.linkedin.com/in/petervandendoel",
+      "instagram": "",
+      "github": "",
+      "email": ""
+    }
+  },
 
   {
     "team": "sound localization",
@@ -492,7 +504,7 @@
     "role": "lead",
     "image": "",
     "media": {
-      "linkedIn": "",
+      "linkedIn": "https://www.linkedin.com/in/faraz-fasihzadeh-ab295b213",
       "instagram": "",
       "github": "",
       "email": ""
