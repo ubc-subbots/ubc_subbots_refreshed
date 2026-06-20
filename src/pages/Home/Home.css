@@ -281,7 +281,7 @@
         .sponsor-cta-inner-wrapper {
             width: 100%;
             height: 100%;
-            background: var(--dark-green) url("images/waiting_poolside.jpg") no-repeat left center;
+            background: var(--dark-green) url("/images/waiting_poolside.jpg") no-repeat left center;
             background-size: cover;
             backdrop-filter: brightness(0.7);
             display: flex;
