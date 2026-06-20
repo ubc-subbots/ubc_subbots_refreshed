@@ -363,6 +363,10 @@
             .card-content {
                 transform: translateY(0%) !important;
                 opacity: 1 !important;
+
+                svg {
+                    height: 30px !important;
+                }
             }
         }
 

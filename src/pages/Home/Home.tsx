@@ -150,7 +150,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/rviz.jpg" />
+                                <img src="/images/rviz.jpg" alt="Rviz software simulation of robot in underwater conditions" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">
@@ -161,7 +161,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/soldering_pcb.jpg" />
+                                <img src="/images/soldering_pcb.jpg" alt="Hands soldering a component on a PCB" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">
@@ -172,7 +172,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/steelhead_upshot.jpg" />
+                                <img src="/images/steelhead_upshot.jpg" alt="Steelhead robot frame on table" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">

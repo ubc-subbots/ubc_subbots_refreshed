@@ -93,7 +93,7 @@ function SponsorCard({ sponsor }: sponsorCardProps) {
     return (
         <div className="sponsor-card">
             <div className="display">
-                <img src={`./images/logos/${sponsor.logo}`} />
+                <img src={`./images/logos/${sponsor.logo}`} alt={sponsor.name} />
                 <div className="underline" />
             </div>
 

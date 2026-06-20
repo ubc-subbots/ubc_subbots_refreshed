@@ -39,7 +39,7 @@ function HighlightPanel() {
             </div>
 
             <div className="panel-display">
-                <img src="/images/pulling_steelhead_out_of_water.jpg" />
+                <img src="/images/pulling_steelhead_out_of_water.jpg" alt="Man pulling robot out of pool" />
                 <div className="content-mask" />
 
                 <div className="content">
@@ -50,7 +50,13 @@ function HighlightPanel() {
                             currentHover < sponsors.length
                                 ? "images/logos/" + sponsors[currentHover].logo
                                 : ""
-                        } 
+                        }
+                        alt={
+                            currentHover !== null &&
+                            currentHover >= 0 &&
+                            currentHover < sponsors.length
+                                ? "images/logos/" + sponsors[currentHover].name
+                                : ""}
                     />
 
                     <p>

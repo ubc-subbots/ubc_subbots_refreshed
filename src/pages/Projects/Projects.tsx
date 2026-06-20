@@ -10,7 +10,8 @@ interface ProjectItemStruct {
     name: string;
     image: string;
     description: string;
-    resources: string[]
+    resources: string[];
+    alt: string;
 }
 
 interface Project {

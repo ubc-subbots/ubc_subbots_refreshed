@@ -8,7 +8,8 @@ interface ProjectItemStruct {
     name: string;
     image: string;
     description: string;
-    resources: string[]
+    resources: string[];
+    alt: string;
 }
 
 
@@ -49,7 +50,7 @@ function ProjectItem({ projects }: projectItemProps) {
 
                 <div className="option-display">
 
-                    <img className="display" src={currentProject.image} />
+                    <img className="display" src={currentProject.image} alt={currentProject.alt} />
                     <div className="content">
                         <h3>{currentProject.name}</h3>
 

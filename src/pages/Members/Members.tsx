@@ -56,7 +56,7 @@ function Members() {
                 </div> */}
 
                 <div className="content">
-                    <img src="/images/team_photo.jpg" />
+                    <img src="/images/team_photo.jpg" alt="Photo of subbots members wearing black or dark colors" />
                     <div className="img-mask" />
                     <h2>Meet <strong>The Team</strong></h2>
                     <p className="content-text-large">
@@ -104,7 +104,7 @@ function MemberItem({ member }: MemberItemProps) {
     return (
         <div className="member-item">
             <div className="member-image-wrapper">
-                <img src={member.image !== "" ? `/images/members/${member.image}` : '/images/members/placeholder.png'} />
+                <img src={member.image !== "" ? `/images/members/${member.image}` : '/images/members/placeholder.png'} alt={`Profile picture of ${member.firstName} ${member.lastName}`} />
                 {links.length > 0 && (
                     <div className="member-overlay">
                         {links.map(link => (
@@ -164,7 +164,7 @@ function MemberFactory({ team, members }: MemberFactoryProps) {
             <section className="factorygen-member-section-inner">
 
                 <div className="header">
-                    <img src="/images/pulling_steelhead_out_of_water.jpg" />
+                    <img src="/images/pulling_steelhead_out_of_water.jpg" alt="Man pulling robot out of the pool" />
                     <div className="img-mask" />
                     <h1>{team.toUpperCase()}</h1>
 
