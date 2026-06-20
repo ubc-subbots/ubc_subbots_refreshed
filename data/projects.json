@@ -1,7 +1,7 @@
 [
     {
         "title": "Software",
-        "image": "/images/simulation.png",
+        "image": "/images/simulation.jpg",
         "description": "Whereas the other teams construct the mechanical body of our robots, the software team acts as Frankenstein, giving life and thought to the cold, uncaring steel carcass. Maybe that’s an overexaggeration, but our main goal is to program the various autonomous tasks required for competition through the utilization of various control systems and sensors.",
         "categories": ["Website / Design", "Computer Vision", "Data Centralization", "Autonomous Navigation"],
         "projects": [
