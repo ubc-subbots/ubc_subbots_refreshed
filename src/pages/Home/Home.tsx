@@ -39,17 +39,19 @@ function Home() {
             const split = new SplitText(text, {
                 type: "words",
                 wordsClass: "word",
+                // Use built-in GSAP masking function (performance)
+                mask: "words"
             });
 
-            split.words.forEach((word) => {
-                if (!word.parentNode) return;
+            // split.words.forEach((word) => {
+            //     if (!word.parentNode) return;
 
-                const wrapper = document.createElement("span");
-                wrapper.classList.add("word-mask");
+            //     const wrapper = document.createElement("span");
+            //     wrapper.classList.add("word-mask");
 
-                word.parentNode.insertBefore(wrapper, word);
-                wrapper.appendChild(word);
-            });
+            //     word.parentNode.insertBefore(wrapper, word);
+            //     wrapper.appendChild(word);
+            // });
 
             gsap.from(split.words, {
                 yPercent: 120,
@@ -148,7 +150,7 @@ function Home() {
 
                         <div className="subteam-card" onClick={() => navigate("/projects")}>
                             <div className="card-display">
-                                <img src="/images/rviz.png" />
+                                <img src="/images/rviz.jpg" />
                                 <div className="img-mask"></div>
                             </div>
                             <div className="card-content">

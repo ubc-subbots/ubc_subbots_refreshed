@@ -57,7 +57,7 @@ function Footer() {
             <div className="credits">
 
                 <div className="credits-left">
-                    <p>Copyright © UBC Subbots 2025</p>
+                    <p>Copyright © UBC Subbots 2026</p>
                 </div>
                 <div className="credits-right">
                     <a href="https://www.linkedin.com/company/ubc-subbots/" ><LinkedInLogo /></a>

@@ -68,7 +68,7 @@ function Projects() {
                 <section className="subteam-selector">
                     
                     <a href='#Software' className="subteam-option" >
-                        <img src="/images/rviz.png" />
+                        <img src="/images/rviz.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Software</strong></h2>

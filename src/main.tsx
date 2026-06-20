@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import ScrollToTop from './ScrollToTop.tsx';
 
 import './index.css';
@@ -10,10 +11,10 @@ import Footer from './components/Footer/Footer.tsx';
 
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <HashRouter>
     <ScrollToTop />
     <Navbar />
     <App />
     <Footer />
-  </BrowserRouter>
+  </HashRouter>
 );

@@ -143,11 +143,11 @@ span {
     font-weight: inherit;
   }
 
-  .word-mask {
+  /* .word-mask {
     display: inline-block;
     overflow: hidden;
     vertical-align: bottom;
-  }
+  } */
 
   .word {
     display: inline-block;
