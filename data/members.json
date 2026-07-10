@@ -14,18 +14,17 @@
   },
   {
     "team": "captains",
-    "firstName": "Viktor",
-    "lastName": "Moreno",
+    "firstName": "Abhishek",
+    "lastName": "Raghuwanshi",
     "role": "member",
-    "image": "viktor_moreno.jpeg",
+    "image": "abhishek_raghuwanshi.jpeg",
     "media": {
-      "linkedIn": "https://www.linkedin.com/in/vmoreno2001/",
+      "linkedIn": "https://www.linkedin.com/in/a112r",
       "instagram": "",
       "github": "",
-      "email": "viktor.moreno123@gmail.com"
+      "email": ""
     }
   },
-
 
 
   {
@@ -159,19 +158,6 @@
     "image": "",
     "media": {
       "linkedIn": "",
-      "instagram": "",
-      "github": "",
-      "email": ""
-    }
-  },
-  {
-    "team": "electrical",
-    "firstName": "Abhishek",
-    "lastName": "Raghuwanshi",
-    "role": "lead",
-    "image": "abhishek_raghuwanshi.jpeg",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/a112r",
       "instagram": "",
       "github": "",
       "email": ""
