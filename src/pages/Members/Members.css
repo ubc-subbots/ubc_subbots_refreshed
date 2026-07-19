@@ -50,14 +50,23 @@
         }
     }
 
+    .legend-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding: var(--padding-small);
+        display: flex;
+        justify-content: center;
+    }
+
     .legend {
-        display: inline-flex;
+        width: clamp(var(--minimum-content-width), 100%, var(--maximum-content-width));
+        padding: 0 var(--padding-large);
+        display: flex;
         align-items: center;
         gap: 8px;
         margin-top: 24px;
         margin-bottom: 24px;
         font-size: 1.8rem;
-        margin-left: 8.0rem;
         svg {
             transform: rotateZ(-27deg);
             aspect-ratio: 1 / 1;

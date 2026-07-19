@@ -68,10 +68,11 @@ function Members() {
                 
             </section>
 
-            <div className="legend">
-                <FontAwesomeIcon icon={faAnchor} /> = Team Lead
+            <div className="legend-wrapper">
+                <div className="legend">
+                    <FontAwesomeIcon icon={faAnchor} /> = Team Lead
+                </div>
             </div>
-
 
             {Object.entries(membersByTeam).map(([team, teamMembers]) => (
                 <MemberFactory key={team} team={team} members={teamMembers} />

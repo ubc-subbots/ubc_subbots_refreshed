@@ -2,9 +2,23 @@ import SubbotsLogo from '../../assets/icons/subbots.svg?react';
 import LinkedInLogo from '../../assets/icons/linkedin-solid.svg?react';
 import InstagramLogo from '../../assets/icons/instagram-solid.svg?react';
 import GitHubLogo from '../../assets/icons/github-solid.svg?react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 
 import './Footer.css';
+
+
+interface ContactEntry {
+    label: string;
+    email: string;
+}
+
+const contacts: ContactEntry[] = [
+    { label: "General", email: "info@ubcsubbots.com" },
+    { label: "Sponsorship", email: "sponsorship@ubcsubbots.com" },
+    { label: "Media", email: "media@ubcsubbots.com" },
+];
 
 
 function Footer() {
@@ -28,7 +42,7 @@ function Footer() {
                     <a onClick={() => navigateAndClose("/projects")}>Projects</a>
                     <a onClick={() => navigateAndClose("/members")}>Members</a>
                     {/* <a onClick={() => navigateAndClose("/robots")}>Robots</a> */}
-                    <a onClick={() => navigateAndClose("/sponsors")}>Sponsor</a>
+                    <a onClick={() => navigateAndClose("/sponsors")}>Sponsors</a>
                 </div>
 
             </div>
@@ -52,7 +66,6 @@ function Footer() {
                 </div>
 
             </div>
-
 
             <div className="credits">
 
