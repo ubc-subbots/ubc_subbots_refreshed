@@ -36,6 +36,7 @@ function Navbar() {
                             <div onClick={() => navigate("/members")}>Members</div>
                             {/* <div onClick={() => navigate("/robots")}>Robots</div> */}
                             <div onClick={() => navigate("/sponsors")}>Sponsors</div>
+                            <div onClick={() => navigate("/contact")}>Contact</div>
                         </div>
                     </div>
 
@@ -57,6 +58,7 @@ function Navbar() {
                     <div onClick={() => navigate("/members")}>Members</div>
                     {/* <div onClick={() => navigate("/robots")}>Robots</div> */}
                     <div onClick={() => navigate("/sponsors")}>Sponsors</div>
+                    <div onClick={() => navigate("/contact")}>Contact</div>
                 </div>
 
             </div>

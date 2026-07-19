@@ -34,6 +34,11 @@ function Projects() {
     }, []);
 
 
+    function scrollToSubteam(title: string) {
+        document.getElementById(title)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
     const autoSubteamProjects = projects.map((item) => {
 
         return (
@@ -68,32 +73,32 @@ function Projects() {
 
                 <section className="subteam-selector">
                     
-                    <a href='#Software' className="subteam-option" >
+                    <div onClick={() => scrollToSubteam('Software')} className="subteam-option" >
                         <img src="/images/rviz.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Software</strong></h2>
                             <p>Create and refine subaquatic artificial intelligence</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href='#Electrical' className="subteam-option">
+                    <div onClick={() => scrollToSubteam('Electrical')} className="subteam-option">
                         <img src="/images/soldering_pcb.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Electrical</strong></h2>
                             <p>Design the interface between the computer and the sea</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href='#Mechanical' className="subteam-option">
+                    <div onClick={() => scrollToSubteam('Mechanical')} className="subteam-option">
                         <img src="/images/steelhead_upshot.jpg" />
                         <div className="img-mask" />
                         <div className="content">
                             <h2><strong>Mechanical</strong></h2>
                             <p>Push the physical limits of underwater mechanics</p>
                         </div>
-                    </a>
+                    </div>
 
                 </section>
 

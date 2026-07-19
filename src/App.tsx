@@ -8,6 +8,7 @@ import Projects from './pages/Projects/Projects.tsx';
 import Members from './pages/Members/Members.tsx';
 import Robots from './pages/Robots/Robots.tsx';
 import Sponsors from './pages/Sponsors/Sponsors.tsx';
+import Contact from './pages/Contact/Contact.tsx';
 
 
 
@@ -70,9 +71,14 @@ function MainApp() {
         element={<Robots />} 
       />
 
-      <Route 
-        path='/sponsors' 
-        element={<Sponsors />} 
+      <Route
+        path='/sponsors'
+        element={<Sponsors />}
+      />
+
+      <Route
+        path='/contact'
+        element={<Contact />}
       />
 
     </Routes>

@@ -60,9 +60,7 @@ function Members() {
                     <div className="img-mask" />
                     <h2>Meet <strong>The Team</strong></h2>
                     <p className="content-text-large">
-                        United by curiosity and driven by purpose, our
-                        <br />
-                        {teamSize}+ team members bring unique skills and shared passion to every step of the journey!
+                        Our {teamSize}+ team members bring unique skills and shared passion to every step of the journey!
                     </p>
                 </div>
                 

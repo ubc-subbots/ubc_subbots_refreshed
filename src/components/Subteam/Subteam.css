@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    scroll-margin-top: 105px;
 
 
     .background {
