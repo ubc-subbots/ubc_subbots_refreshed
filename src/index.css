@@ -214,6 +214,8 @@ button {
   border: none;
   cursor: pointer;
   background: none;
+  color: inherit;
+  font-family: inherit;
 }
 
 .button-primary {
