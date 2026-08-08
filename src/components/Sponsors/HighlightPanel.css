@@ -23,6 +23,8 @@
             overflow: hidden;
             display: flex;
             flex-wrap: nowrap;
+            color: var(--black);
+            text-decoration: none;
 
             .card-content {
                 width: 100%;
