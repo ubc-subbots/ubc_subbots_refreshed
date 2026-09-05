@@ -25,7 +25,7 @@
   },
   {
     "name": "UBC Applied Science",
-    "logo": "ubc_apsc.jpg",
+    "logo": "ubc_apsc.png",
     "website": "https://apsc.ubc.ca/",
     "description": "UBC Applied Science supports student engineering teams across disciplines, providing resources and a community for hands-on technical work.",
     "tier": "gold",
@@ -60,6 +60,14 @@
     "logo": "pressing_media.png",
     "website": "https://pressing-media.com/",
     "description": "Instead of traditional one-size-fits-all printing services, Pressing Media provided custom quotes for your printing needs, understanding your needs, and staying flexible.",
+    "tier": "gold",
+    "theme": "cyan"
+  },
+  {
+    "name": "Camy's Pizza",
+    "logo": "camys_pizza.png",
+    "website": "https://camyspizza.ca/",
+    "description": "Founder of the butter chicken pizza, Camy's Pizza has provided our team with a testing pool for the robot.",
     "tier": "gold",
     "theme": "cyan"
   }
