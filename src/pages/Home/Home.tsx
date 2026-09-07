@@ -125,10 +125,12 @@ function Home() {
                             At UBC Subbots, we embrace students from all backgrounds and provide hands-on 
                             learning in a supportive, beginner-friendly environment.
                         </p>
-                        <button className="button-primary">
-                            Join Us
-                            <FontAwesomeIcon icon={faUserPlus} />
-                        </button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUbYELwPpUR4Pm5-y3rTqfhogp2Vr0QFNMyUvq0Uf545GwwA/viewform?usp=dialog">
+                            <button className="button-primary">
+                                Join Us
+                                <FontAwesomeIcon icon={faUserPlus} />
+                            </button>
+                        </a>
                     </div>
 
                     <div className="display">
