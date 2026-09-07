@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLocationDot, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 import './Contact.css';
 
@@ -36,6 +36,20 @@ function Contact() {
 
             <section className="contact-info">
                 <div className="contact-info-inner">
+
+                    <div className="info-block">
+                        <h3>Join Us</h3>
+                        Recruiting season is open for the 2026/2027 season! Click the button below to open the Google Forms page to register.
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUbYELwPpUR4Pm5-y3rTqfhogp2Vr0QFNMyUvq0Uf545GwwA/viewform?usp=dialog">
+                            <button className="button-primary">
+                                Apply
+                                <FontAwesomeIcon icon={faPenToSquare} />
+                            </button>
+                        </a>
+                        <p className="subteam-note">
+                            If you prefer not to apply via Google Forms, please contact us using one of the methods below, and we will make every effort to accommodate your request.
+                        </p>
+                    </div>
 
                     <div className="info-block">
                         <h3>Contact Us</h3>
