@@ -39,16 +39,16 @@ function Contact() {
 
                     <div className="info-block">
                         <h3>Join Us</h3>
-                        Recruiting season is open for the 2026/2027 season! Click the button below to open the Google Forms page to register.
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUbYELwPpUR4Pm5-y3rTqfhogp2Vr0QFNMyUvq0Uf545GwwA/viewform?usp=dialog">
-                            <button className="button-primary">
+                        Recruiting season is closed for the 2026/2027 season. Feel free to check back in January!
+                        {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUbYELwPpUR4Pm5-y3rTqfhogp2Vr0QFNMyUvq0Uf545GwwA/viewform?usp=dialog">
+                            <button className="button-primary" disabled>
                                 Apply
                                 <FontAwesomeIcon icon={faPenToSquare} />
                             </button>
                         </a>
                         <p className="subteam-note">
                             If you prefer not to apply via Google Forms, please contact us using one of the methods below, and we will make every effort to accommodate your request.
-                        </p>
+                        </p> */}
                     </div>
 
                     <div className="info-block">
@@ -67,7 +67,7 @@ function Contact() {
                         </p>
                     </div>
 
-                    <div className="info-block map-block">
+                    <div className="info-block">
                         <h3>Visit Us</h3>
                         <div className="map-wrapper">
                             <iframe
