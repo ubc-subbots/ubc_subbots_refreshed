@@ -22,9 +22,9 @@ function SponsorCatalog() {
 
     useEffect(() => {
         fetch('/data/sponsors.json')
-        .then((res) => res.json())
-        .then(setSponsors)
-        .catch(console.error);
+            .then((res) => res.json())
+            .then(setSponsors)
+            .catch(console.error);
     }, []);
 
 
@@ -68,11 +68,11 @@ function SponsorCatalog() {
 
             <div className="divider">
                 <button className="switch" onClick={scrollPrev}>
-                    <FontAwesomeIcon icon={faAngleLeft}/>
+                    <FontAwesomeIcon icon={faAngleLeft} />
                 </button>
 
                 <button className="switch" onClick={scrollNext}>
-                    <FontAwesomeIcon icon={faAngleRight}/>
+                    <FontAwesomeIcon icon={faAngleRight} />
                 </button>
             </div>
 
@@ -92,10 +92,13 @@ function SponsorCard({ sponsor }: sponsorCardProps) {
 
     return (
         <div className="sponsor-card">
-            <div className="display">
-                <img src={`./images/logos/${sponsor.logo}`} alt={sponsor.name} />
-                <div className="underline" />
-            </div>
+            <a href={`${sponsor.website}`}>
+                <div className="display">
+                    <img src={`./images/logos/${sponsor.logo}`} alt={sponsor.name} />
+                    <div className="underline" />
+                </div>
+            </a>
+
 
             <div className="content">
                 <h3>{sponsor.name}</h3>

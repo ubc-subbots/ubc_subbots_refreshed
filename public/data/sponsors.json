@@ -1,5 +1,13 @@
 [
   {
+    "name": "Blu-Sub Mechatronics",
+    "logo": "blusub.png",
+    "website": "https://blu-sub.com/",
+    "description": "Blu-Sub Mechatronics has generously sponsored UBC Subbots by providing subsea components for one of our AUVs, along with heavily discounted parts for our other projects. We highly recommend Blu-Sub for underwater robotics components, as they specialize in high-performance underwater thrusters, propulsion systems, and subsea technology. We are incredibly grateful for their continued support!",
+    "tier": "gold",
+    "theme": "blue"
+  },
+  {
     "name": "UBC Electrical and Computer Engineering",
     "logo": "ece.png",
     "website": "https://ece.ubc.ca/",
@@ -38,14 +46,6 @@
     "description": "UBC Integrated Engineering (IGEN) connects students across engineering domains, reflecting the same cross-disciplinary approach that defines Subbots.",
     "tier": "gold",
     "theme": "cyan"
-  },
-  {
-    "name": "Blu-Sub Mechatronics",
-    "logo": "blusub.png",
-    "website": "https://blu-sub.com/",
-    "description": "Blu-Sub Mechatronics has generously sponsored UBC Subbots by providing subsea components for one of our AUVs, along with heavily discounted parts for our other projects. We highly recommend Blu-Sub for underwater robotics components, as they specialize in high-performance underwater thrusters, propulsion systems, and subsea technology. We are incredibly grateful for their continued support!",
-    "tier": "gold",
-    "theme": "blue"
   },
   {
     "name": "MatLab",
