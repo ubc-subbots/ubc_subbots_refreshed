@@ -92,8 +92,8 @@ function SponsorCard({ sponsor }: sponsorCardProps) {
 
     return (
         <div className="sponsor-card">
-            <a href={`${sponsor.website}`}>
-                <div className="display">
+            <a className="display" href={`${sponsor.website}`}>
+                <div>
                     <img src={`./images/logos/${sponsor.logo}`} alt={sponsor.name} />
                     <div className="underline" />
                 </div>

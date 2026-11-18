@@ -8,6 +8,22 @@
     "theme": "blue"
   },
   {
+    "name": "DarkVision",
+    "logo": "darkvision.png",
+    "website": "https://darkvisiontech.com/",
+    "description": "DarkVision creates innovative acoustic imaging devices that scan critical infrastructure for defects and failures. They have generously provided UBC Subbots with funding for our robotics projects.",
+    "tier": "gold",
+    "theme": "black"
+  },
+  {
+    "name": "Onshape",
+    "logo": "onshape.svg",
+    "website": "https://www.onshape.com/en/",
+    "description": "Onshape is an online Computer Aided Design tool that runs in your web browser. Only Onshape runs on any device, never crashes or loses data, and streamlines collaboration with branching & merging.",
+    "tier": "gold",
+    "theme": "cyan"
+  },
+  {
     "name": "UBC Electrical and Computer Engineering",
     "logo": "ece.png",
     "website": "https://ece.ubc.ca/",
@@ -32,26 +48,10 @@
     "theme": "cyan"
   },
   {
-    "name": "Onshape",
-    "logo": "onshape.svg",
-    "website": "https://www.onshape.com/en/",
-    "description": "Onshape is an online Computer Aided Design tool that runs in your web browser. Only Onshape runs on any device, never crashes or loses data, and streamlines collaboration with branching & merging.",
-    "tier": "gold",
-    "theme": "cyan"
-  },
-  {
     "name": "UBC Integrated Engineering",
     "logo": "ubc_igen.png",
     "website": "https://www.integratedengineers.ca/",
     "description": "UBC Integrated Engineering (IGEN) connects students across engineering domains, reflecting the same cross-disciplinary approach that defines Subbots.",
-    "tier": "gold",
-    "theme": "cyan"
-  },
-  {
-    "name": "MatLab",
-    "logo": "matlab.svg",
-    "website": "https://www.mathworks.com/products/matlab.html",
-    "description": "MATLAB is a high-level data analysis and visualization environment that is specifically designed for engineering workflows. Its extended ecosystem allows engineers to design and develop workflows, turning ideas into innovative, advanced engineered systems.",
     "tier": "gold",
     "theme": "cyan"
   },
