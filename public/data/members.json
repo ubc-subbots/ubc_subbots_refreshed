@@ -14,15 +14,28 @@
   },
   {
     "team": "captains",
-    "firstName": "Abhishek",
-    "lastName": "Raghuwanshi",
+    "firstName": "Ajay",
+    "lastName": "Sharma",
     "role": "member",
-    "image": "abhishek_raghuwanshi.jpeg",
+    "image": "ajay_sharma.png",
     "media": {
-      "linkedIn": "https://www.linkedin.com/in/a112r",
+      "linkedIn": "https://www.linkedin.com/in/ajaysh998",
       "instagram": "",
       "github": "",
-      "email": ""
+      "email": "ajaysh998@gmail.com"
+    }
+  },
+  {
+    "team": "captains",
+    "firstName": "Artur",
+    "lastName": "Graefenstein",
+    "role": "member",
+    "image": "artur_graefenstein.jpg",
+    "media": {
+      "linkedIn": "linkedin.com/in/artur-graefenstein-b3a6a4301",
+      "instagram": "",
+      "github": "",
+      "email": "arturkag6002@gmail.com"
     }
   },
 
@@ -64,19 +77,6 @@
       "instagram": "",
       "github": "",
       "email": ""
-    }
-  },
-  {
-    "team": "actuators",
-    "firstName": "Artur",
-    "lastName": "Graefenstein",
-    "role": "member",
-    "image": "artur_graefenstein.jpg",
-    "media": {
-      "linkedIn": "linkedin.com/in/artur-graefenstein-b3a6a4301",
-      "instagram": "",
-      "github": "",
-      "email": "arturkag6002@gmail.com"
     }
   },
   {
@@ -132,6 +132,19 @@
       "instagram": "",
       "github": "",
       "email": "lelandgraves0@gmail.com"
+    }
+  },
+  {
+    "team": "admin",
+    "firstName": "Abhishek",
+    "lastName": "Raghuwanshi",
+    "role": "member",
+    "image": "abhishek_raghuwanshi.jpeg",
+    "media": {
+      "linkedIn": "https://www.linkedin.com/in/a112r",
+      "instagram": "",
+      "github": "",
+      "email": ""
     }
   },
   {
@@ -320,19 +333,6 @@
       "instagram": "",
       "github": "",
       "email": ""
-    }
-  },
-  {
-    "team": "mechanical",
-    "firstName": "Ajay",
-    "lastName": "Sharma",
-    "role": "lead",
-    "image": "ajay_sharma.png",
-    "media": {
-      "linkedIn": "https://www.linkedin.com/in/ajaysh998",
-      "instagram": "",
-      "github": "",
-      "email": "ajaysh998@gmail.com"
     }
   },
 
